@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://icon-library.com/images/signup-icon/signup-icon-13.jpg" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+  </div>
+
+  <div class="container-fluid loginPage">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-4 col-lg-3 sidebar d-flex flex-column align-items-center">
+        <h2>Welcome</h2>
+        <p>Sign in to your account</p>
+      </div>
+      <!-- Login Form -->
+      <div class="col-md-8 col-lg-9 login-container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="login-form">
+              <h3 class="text-center mb-4">Sign In</h3>
+              <form id="login">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="Enter email" required />
+                </div>
+                <div class="form-group">
+                  <div style="position: relative;">
+                    <input id="myInput" type="password" class="form-control" name="password" placeholder="Password"
+                      minlength="6" maxlength="11" required />
+                  <div id="check">
+                    <svg xmlns="http://www.w3.org/2000/svg"id="" width="20" height="20" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16"  style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%);">
+                      <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                      <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                    </svg>
+                  </div>
+                    <!-- <input type="checkbox" 
+                      style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%);"> -->
+                  </div>
+                         <br>
+                  <a class="mb-3 link" href="./forgetPassword.html">Forget Password</a>
+
+                  <br /><br>
+                  <button type="submit" class="btn px-5" id="btn">
+                    Sign In</button><br />
+                  <p class="text-dark">
+                    Don't have an account?
+                    <a href="./signup.html"><span class="text-primary">Signup Here</span></a>
+                  </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script type="module" src="../src/app.js"></script>
+  <!-- Include SweetAlert library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

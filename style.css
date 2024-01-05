@@ -1,0 +1,162 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+    /* font-size: larger; */
+}
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: #599bdc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form {  
+    color: #599bdc;
+    padding: 20px;
+    border-radius: 8px;
+}
+#btn{
+    background-color: #599bdc;
+    border-radius: 50px;
+    color: white;
+}
+#btn:hover{
+    color: #d9e2ea;
+}
+
+.chart-container {
+    position: relative;
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    margin: auto; /* Center the container horizontally */
+  }
+
+  #loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* filter: none !important; */
+  }
+
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+  }
+  .blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    pointer-events: none; /* Prevent interaction with the blurred background */
+  }
+  .signupLoader {
+    filter: blur(5px);
+  }
+  .search-bar {
+    display: flex;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.search-input,
+.search-select {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.search-select {
+    background-color:#ccc;
+    color: white;
+    cursor: pointer;
+}
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.warning-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/* Media query for screens with a width of 550px or less */
+@media (max-width: 1000px) {
+    .input {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .search-bar {
+        width: 100%; /* Make the search bar full width on small screens */
+    }
+
+    .search-input,
+    .search-select,
+    .category-select {
+        width: 100% !important; /* Make input and select full width on small screens */
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+    }
+}
+
+.add-account-btn {
+    background-color: #007bff;
+    color: #171616;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.accounts-list {
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #ccc;
+}
+.account-item{
+    margin: 5px;
+}
+
+.cross{
+    cursor: pointer;
+}
+.category-select{
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    width: 34%; /* Adjust the width as needed */
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .no-shadow.d-flex  {
+        box-shadow: none !important; /* Adding !important to override any conflicting styles */
+    }
+    .totalAmount{
+        box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+    }
+}
+
+.bi-eye-slash-fill, .bi-eye-fill{
+    cursor: pointer;
+}
